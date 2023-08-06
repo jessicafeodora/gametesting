@@ -1,18 +1,18 @@
 <?php
-echo "welcome\n";
+echo "Hi, welcome!\n";
 while (true) {
-	echo "=== game tebak angka ===\n";
-echo "tebak sebuah angka 1 dan 9!\n";
+	echo "======= Game Tebak Angka =======\n";
+echo "Tebak sebuah angka dari 1 sampai 9!\n";
 $computer = rand(1,9);
-echo "masukin tebakan lo: ";
+echo "Masukkin tebakan kamu: ";
 $player = trim(fgets(STDIN));
 if ($player == $computer) {
-	echo "menang. angka komputer: $computer\n";
+	echo "Selamat kamu menang. Angka komputer: $computer\n";
 	exit;
 } else {
-	echo "kalah. angka komputer: $computer\n";
+	echo "Sayang sekali, kamu kalah. Angka komputer: $computer\n";
 };
-};
-
+echo "This game was made together with Kang Fandy in Webinar\n\n";
+}
 
 
